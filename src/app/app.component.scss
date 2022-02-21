@@ -1,0 +1,10 @@
+.products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width:80vw;
+  min-height: max-content;
+  margin: 0 auto
+}

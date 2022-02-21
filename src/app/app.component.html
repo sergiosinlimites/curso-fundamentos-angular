@@ -23,8 +23,6 @@
   </li>
 </ul>
 
-<div *ngFor="let product of products">
-  <h2>{{ product.title }}</h2>
-  <img [src]="product.image" [alt]="product.title" style="width: 200px; height: 200px;">
-  <span>{{ product.price }}</span>
+<div class="products-container">
+  <app-product *ngFor="let product of products"  (productClicked)="readClick($event)" [product]="product"></app-product>
 </div>
