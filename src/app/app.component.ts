@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'curso-fundamentos-angular';
+  person = {
+    nombre: '',
+    age: ''
+  };
+
+  form = {
+    name: '',
+    mail: '',
+    pass: ''
+  }
+
+  box = {
+    width: 100,
+    height: 100,
+    background: 'red'
+  }
+
+  names = ['Nicolas', 'Sergio', 'Andrea'];
+
+  submitLogin() {
+    alert('Has entrado');
+  }
 }
